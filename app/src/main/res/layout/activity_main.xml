@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:id="@+id/mainLayout"
+    tools:context="com.example.deepbrain.tictactoe.MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dip" >
+
+        <Button android:id="@+id/one"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:minHeight="250px"
+            android:background="@drawable/my_button_bg"
+            android:text=" "
+            android:textSize="70px" />
+
+        <Button android:id="@+id/two"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+            android:text=" "
+            android:textSize="70px" />
+
+        <Button
+            android:id="@+id/three"
+            android:minHeight="250px"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+            android:text=" "
+            android:textSize="70px" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/four"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+
+            android:text=" "
+            android:textSize="70px" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+
+            android:text=" "
+            android:textSize="70px" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+
+            android:text=" "
+            android:textSize="70px" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+            android:text=" "
+            android:textSize="70px" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+            android:text=" "
+            android:textSize="70px" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_height="match_parent"
+            android:minHeight="250px"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+            android:text=" "
+            android:textSize="70px" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dip"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/dialogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Нажмите кнопку для начала"
+            android:textSize="25px" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+
+        <FrameLayout android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/songVolume"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:width="5px"
+                android:background="@android:drawable/ic_lock_silent_mode"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+            </Button>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/playerText"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Игрок:" />
+
+
+        <TextView
+            android:id="@+id/aiText"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AI:" />
+    </TableRow>
+
+
+
+</TableLayout>
