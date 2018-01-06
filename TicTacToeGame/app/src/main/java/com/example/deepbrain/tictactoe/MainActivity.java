@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         textView.setText("Нажмите кнопку для начала.");
-
+        click = 0;
         playerView.setText("Игрок 1:"+player1Score);
         aiView.setText("Игрок 2:"+player2Score);
 
